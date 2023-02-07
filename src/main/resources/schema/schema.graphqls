@@ -1,0 +1,22 @@
+scalar Upload
+
+type Query {
+    getShows(titleFilter: String): [Show]
+    getShowsById(id: Int): [Show]
+    getMyException: String
+    getBusinessException: String
+}
+
+type Mutation  {
+    #uploadScriptWithMultipartPOST(input: Upload!): Boolean
+
+    # Upload a file and return the URL on the server
+    #uploadFile(file: Upload!, rootDir: String!, subDir: String!): String
+    uploadFile(file: Upload!): Boolean
+    #uploadFile: ID!
+}
+
+type Show {
+    title: String
+    releaseYear: Int
+}
