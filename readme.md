@@ -3,5 +3,6 @@ POC created to validate the use of DGS framework for GraphQL.
 
 
 TODO
+- Simples Cases: DONE
+- Exception handling: DONE
 - Upload: DOING
-- Exception handling: OK
